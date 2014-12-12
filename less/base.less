@@ -1,0 +1,133 @@
+//global
+.font_simsun{ font-family:SimSun;}//宋体
+
+.ov_visibel{ overflow:visible !important;}
+.ov_hide{ overflow:hidden !important;}
+
+.ws_normal{ white-space:normal !important;}
+.ws_break{word-wrap:break-word !important;word-break:normal !important;}
+.ws_prewrap{ white-space:pre-wrap !important;}
+.ws_hide{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.t_l{text-align:left !important;}
+.t_c{text-align:center !important;}
+.t_r{text-align:right !important;}
+
+.block{ display:block !important;visibility:visible;}
+.hidden{display: none !important;visibility: hidden;}
+
+
+.fl_l{float:left !important;}
+.fl_r{float:right !important;}
+.fl_n{float:none !important;}
+
+
+// .red{color:red !important;}
+// .cf60{color:#f60 !important;}
+// .cfff{color:#fff !important;}
+// .cc00{color:#c00 !important;}
+// .c03a{color:#03a !important;}
+// .c999{color:#999 !important;}
+// .c900{color:#900 !important;}
+// .cf90{color:#f90 !important;}
+// .c396{color:#396 !important;}
+// .cc33{color:#c33 !important;}
+// .c960{color:#960 !important;}
+// .c690{color:#690 !important;}
+// .ccc{color:#ccc !important;}
+// .ceee{color:#eee !important;}
+// .c369{color:#369 !important;}
+// .c555{color:#555 !important;}
+// .c333{color:#333 !important;}
+// .cfc6{color:#fc6 !important;}
+// .c6d6{color:#6d6d6d !important;}
+// .c000{color:#000 !important;}
+// .bc33{ background:#c33 !important; color:#fff !important;}
+// .b396{ background:#396 !important; color:#fff !important;}
+// .bf7{ background:#f7f7f7 !important; color:#666 !important;}
+// .f2f2{background:#f2f2f2;}
+
+// .pad0{ padding:0 !important;}
+// .pad5{padding:5px;}
+// .pad10{ padding:10px;}
+// .pad20{ padding:20px;}
+// .pl_5{ padding-left:5px;}
+// .pl_10{ padding-left:10px;}
+// .pl_20{ padding-left:20px;}
+// .pl_30{ padding-left:30px;}
+// .pl_40{ padding-left:40px;}
+// .pr_5{ padding-right:5px;}
+// .pr_10{ padding-right:10px;}
+// .pr_20{ padding-right:20px;}
+// .pr_30{ padding-right:30px;}
+// .pr_40{ padding-right:40px;}
+// .pt_5{ padding-top:5px;}
+// .pt_10{ padding-top:10px;}
+// .pt_15{ padding-top:15px;}
+// .pt_20{ padding-top:20px;}
+// .pt_30{ padding-top:30px;}
+// .pb_5{ padding-bottom:5px;}
+// .pb_10{ padding-bottom:10px;}
+// .pb_15{padding-bottom:15px;}
+// .pb_20{ padding-bottom:20px;}
+// .pb_30{ padding-bottom:30px;}
+.mar0{ margin:0;}
+.mar_auto{margin:auto;}
+.mar10{ margin:10px;}
+.mar20{ margin:20px;}
+.mt_5{ margin-top:5px;}
+.mt_10{ margin-top:10px;}
+.mt_20 { margin-top:20px;}
+.mt_30 { margin-top:30px;}
+.mt_35 { margin-top:35px;}
+.mb_5{ margin-bottom:5px;}
+.mb_10{ margin-bottom:10px;}
+.mb_20{ margin-bottom:20px;}
+.mb_30{ margin-bottom:30px;}
+.ml_4{ margin-left:4px;}
+.ml_5{ margin-left:5px;}
+.ml_10{ margin-left:10px;}
+.ml_20{ margin-left:20px;}
+.ml_30 { margin-left:30px;}
+.mr_5{ margin-right:5px;}
+.mr_10{ margin-right:10px;}
+.mr_20{ margin-right:20px;}
+.mr_30{ margin-right:30px;}
+
+.po_ab{ position:absolute;}
+.po_re{ position:relative;}
+
+//
+.col1{ .col(1); }
+.col2{ .col(2); }
+.col3{ .col(3); }
+.col4{ .col(4); }
+.col5{ .col(5); }
+.col6{ .col(6); }
+.col7{ .col(7); }
+.col8{ .col(8); }
+.col9{ .col(9); }
+//
+// .op_05{.opacity(.5);}
+// .op_03{.opacity(.3);}
+//arrow
+.arrow_b(){ border:4px solid #ccc;border-left-color:#fff; border-right-color:#fff;border-bottom-color:#fff; display:inline-block; width:0; height:0; font-size:0; line-height:0; vertical-align:middle; margin:0 2px;}
+.arrow_t(){ border:4px solid #ccc;border-left-color:#fff; border-right-color:#fff;border-top-color:#fff; display:inline-block; width:0; height:0; font-size:0; line-height:0; vertical-align:text-top; margin:0 2px;}
+.arrow_r(){ border:4px solid #ccc;border-right-color:#fff; border-top-color:#fff;border-bottom-color:#fff; display:inline-block; width:0; height:0; font-size:0; line-height:0; vertical-align:middle; margin:0 2px;}
+.arrow_l(){ border:4px solid #ccc;border-left-color:#fff; border-top-color:#fff;border-bottom-color:#fff; display:inline-block; width:0; height:0; font-size:0; line-height:0; vertical-align:middle; margin:0 2px;}
+
+
+// 让position:fixed在IE6下可用!
+.fixed-top {position:fixed;bottom:auto;top:0px;}
+.fixed-bottom {position:fixed;bottom:0px;top:auto;}
+.fixed-left {position:fixed;right:auto;left:0px;}
+.fixed-right {position:fixed;right:0px;left:auto;}
+//上面的是除了IE6的主流浏览器通用的方法
+#ie6,#ie6 body  {background-image:url(about:blank);background-attachment:fixed;}//修正IE6振动bug
+#ie6 .fixed-top {position:absolute;bottom:auto;top:~"expression(eval(document.documentElement.scrollTop))";}
+#ie6 .fixed-right {position:absolute;right:auto;left:~"expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0))";}
+#ie6 .fixed-bottom {position:absolute;bottom:auto;top:~"expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)))";}
+#ie6 .fixed-left {position:absolute;right:auto;left:~"expression(eval(document.documentElement.scrollLeft))";}
+
+
+

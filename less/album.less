@@ -1,0 +1,192 @@
+// album_list 相册
+.albums{
+	&.ab_col2{
+		.album_item{
+			width:50%;overflow:visible;
+			.ab_fream { height:350px;}
+		}
+	}
+	&.ab_col3{
+		.album_item{
+			width:33.33%;overflow:visible;
+			.ab_fream{height:300px;}
+		}
+	}
+	&.ab_col4{
+		.album_item{
+			width:25%;overflow:visible;
+			.ab_fream{height:200px;}
+		}
+	}
+
+	&.ab_col5{
+		.album_item{
+			width:20%;overflow:visible;
+			.ab_fream{height:180px;}
+		}
+	}
+
+	.album_item{
+		display:inline;
+		float:left;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:relative;
+		z-index:1;
+		padding-top:60px;
+		cursor:pointer;
+	    background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(rgba(255,255,255,0)));
+	    background-image: -webkit-linear-gradient(top, #eaeaea, rgba(255,255,255,0));
+	    background-image:    -moz-linear-gradient(top, #eaeaea, rgba(255,255,255,0));
+	    background-image:      -o-linear-gradient(top, #eaeaea, rgba(255,255,255,0));
+	    background-image:         linear-gradient(to bottom, #eaeaea, rgba(255,255,255,0));
+	    filter: ~'progid:DXImageTransform.Microsoft.gradient(startColorstr=#99eaeaea,endColorstr=#00ffffff)'; 
+    		zoom: 1;
+		.ab_title{ 
+			font:bold 12px/25px "Hiragino Sans GB", "Microsoft Yahei","微软雅黑", sans-serif;
+			text-align:center;
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+			color:#000;
+			position:relative;
+			z-index:2;
+		}
+		.ab_fream{
+			width:100%;height:400px;
+			
+			ul{
+				position: relative;
+				z-index:1;
+				width:100%;
+				height:100%;
+
+				li{
+					position: absolute;
+					z-index:1;
+					width:100%;
+					height:100%;
+					display: table-cell;
+					vertical-align:middle;
+					text-align:center;
+					-webkit-transition: all 0.3s ease-out; 
+					     -moz-transition: all 0.3s ease-out; 
+					       -o-transition: all 0.3s ease-out; 
+					          transition: all 0.3s ease-out;
+					img{
+						box-shadow:1px 1px 5px rgba(0,0,0,.4);
+						border: 3px solid #fff;
+						max-width:70%;
+						max-height:80%;
+						vertical-align:middle;
+					}
+
+					&:nth-child(1){
+						top:0;
+						left:0;
+						z-index:6;
+					}
+					&:nth-child(2){
+						top:5px;
+						left:0;
+						z-index:5;
+						img{
+							-webkit-transform: rotate(-10deg); 
+						     -moz-transform: rotate(-10deg); 
+						      -ms-transform: rotate(-10deg); 
+						       -o-transform: rotate(-10deg); 
+						          transform: rotate(-10deg);
+						}
+
+					}
+					&:nth-child(3){
+						top:10px;
+						left:0;
+						z-index:4;
+						img{
+							-webkit-transform: rotate(10deg); 
+						     -moz-transform: rotate(10deg); 
+						      -ms-transform: rotate(10deg); 
+						       -o-transform: rotate(10deg); 
+						          transform: rotate(10deg);
+						}
+					}
+					&:nth-child(4){
+						top:15px;
+						left:0;
+						z-index:3;
+						img{
+							-webkit-transform: rotate(-25deg); 
+						     -moz-transform: rotate(-25deg); 
+						      -ms-transform: rotate(-25deg); 
+						       -o-transform: rotate(-25deg); 
+						          transform: rotate(-25deg);
+						}
+					}
+
+					
+				}
+			}
+
+		}
+
+		.ab_info{
+				padding-bottom:10px;
+				.ab_time{
+					display:inline-block;
+					float:left;
+					margin-left:10px;
+				}
+				.ab_count{
+					float:right;
+					margin-right:10px;
+				}
+				.ab_des{
+					clear:both;
+					margin-left:10px;
+					margin-right:10px;
+					line-height:18px;
+					max-height:36px;
+					overflow:hidden;
+				}
+			}
+
+		&:hover{
+			z-index:2;
+			background:#666;
+				.ab_title{
+					color:#fff;
+					text-shadow:0 -1px 0 #000;
+					background:#555;
+					background:rgba(0,0,0,.2);
+				}
+				.ab_fream{
+					ul {
+						li{
+
+							&:nth-child(1){
+								top:50px;left:0;
+							}
+							&:nth-child(2){
+								top:-40px;
+							}
+							&:nth-child(3){
+								left:10%;text-align:right;									
+							}
+							&:nth-child(4){
+								left:-10%;text-align:left;								
+							}
+						}
+					}
+				}
+				.ab_info{
+					background:#555;
+					background:rgba(0,0,0,.2);
+					color:#fff;z-index:2;
+					text-shadow:1px 1px 0 rgba(0,0,0,.5);
+				}
+				
+			}
+	}
+}

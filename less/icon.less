@@ -1,0 +1,783 @@
+// 图标
+	
+
+.icon (@size ,@type , @bg){
+	width:@size; 
+	height:@size;
+	display:inline-block;
+	overflow:hidden; 
+	vertical-align:middle; 
+	font:0/0; 
+	background-image:url('@{bg}');
+	background-repeat:no-repeat; 
+	&.four-case{
+		background-position:-@type*@size -@size*0; 
+	}
+	&.nine-case{
+		background-position:-@type*@size -@size*1; 
+	}
+	&.nine-case-two{
+		background-position:-@type*@size -@size*2;
+	}
+	&.air-signal{
+		background-position:-@type*@size -@size*3;
+	}
+	&.align-center{
+		background-position:-@type*@size -@size*4; 
+	}
+	&.align-just{
+		background-position:-@type*@size -@size*5; 
+	}
+	&.align-left{
+		background-position:-@type*@size -@size*6; 
+	}
+	&.align-right{
+		background-position:-@type*@size -@size*7; 
+	}
+	&.app-window{
+		background-position:-@type*@size -@size*8; 
+	}
+	&.arrow-bottom{
+		background-position:-@type*@size -@size*9; 
+	}
+	&.arrow-bottom-left{
+		background-position:-@type*@size -@size*10; 
+	}
+	&.arrow-bottom-rigth{
+		background-position:-@type*@size -@size*11; 
+	}
+	&.arrow-l{
+		background-position:-@type*@size -@size*12;	
+	}
+	&.arrow-left{
+		background-position:-@type*@size -@size*13; 
+	}
+	&.arrow-r{
+		background-position:-@type*@size -@size*14; 
+	}
+	&.arrow-right{
+		background-position:-@type*@size -@size*15 
+	}
+	&.arrow-top{
+		background-position:-@type*@size -@size*16; 
+	}
+	&.arrow-top-left{
+		background-position:-@type*@size -@size*17; 
+	}
+	&.arrow-top-right{
+		background-position:-@type*@size -@size*18; 
+	}
+	&.arrow-two-head{
+		background-position:-@type*@size -@size*19; 
+	}
+	&.arrow-two-head-2{
+		background-position:-@type*@size -@size*20; 
+	}
+	&.attention{
+		background-position:-@type*@size -@size*21; 
+	}
+	&.battery{
+		background-position:-@type*@size -@size*22; 
+	}
+	&.book{
+		background-position:-@type*@size -@size*23; 
+	}
+	&.bell{
+		background-position:-@type*@size -@size*24; 
+	}
+	&.bookmark-1{
+		background-position:-@type*@size -@size*25; 
+	}
+	&.bookmark-2{
+		background-position:-@type*@size -@size*26; 
+	}
+	&.boxs{
+		background-position:-@type*@size -@size*27; 
+	}
+	&.br-down{
+		background-position:-@type*@size -@size*28; 
+	}
+	&.br-next{
+		background-position:-@type*@size -@size*29; 
+	}
+	&.br-prev{
+		background-position:-@type*@size -@size*30; 
+	}
+	&.br-up{
+		background-position:-@type*@size -@size*31; 
+	}
+	&.brackets{
+		background-position:-@type*@size -@size*32; 
+	}
+	&.browser{
+		background-position:-@type*@size -@size*33; 
+	}
+	&.brush{
+		background-position:-@type*@size -@size*34; 
+	}
+	&.bug{
+		background-position:-@type*@size -@size*35; 
+	}
+	&.burst{
+		background-position:-@type*@size -@size*36; 
+	}
+	&.calc{
+		background-position:-@type*@size -@size*37; 
+	}
+	&.calendar-1{
+		background-position:-@type*@size -@size*38; 
+	}
+	&.calendar-2{
+		background-position:-@type*@size -@size*39; 
+	}
+	&.cancel{
+		background-position:-@type*@size -@size*40; 
+	}
+	&.case{
+		background-position:-@type*@size -@size*41; 
+	}
+	&.cc{
+		background-position:-@type*@size -@size*42; 
+	}
+	&.cert{
+		background-position:-@type*@size -@size*43; 
+	}
+	&.chart-bar{
+		background-position:-@type*@size -@size*44; 
+	}
+	&.chart-line{
+		background-position:-@type*@size -@size*45; 
+	}
+	&.chart-line2{
+		background-position:-@type*@size -@size*46; 
+	}
+	&.chart-pie{
+		background-position:-@type*@size -@size*47; 
+	}
+	&.checkbox-checked{
+		background-position:-@type*@size -@size*48; 
+	}
+	&.checkbox-unchecked{
+		background-position:-@type*@size -@size*49; 
+	}
+	&.checkmark{
+		background-position:-@type*@size -@size*50; 
+	}
+	&.clip{
+		background-position:-@type*@size -@size*51; 
+	}
+	&.clipboard-copy{
+		background-position:-@type*@size -@size*52; 
+	}
+	&.clipboard-cut{
+		background-position:-@type*@size -@size*53; 
+	}
+	&.clipboard-past{
+		background-position:-@type*@size -@size*54; 
+	}
+	&.clock{
+		background-position:-@type*@size -@size*55; 
+	}
+	&.contact-card{
+		background-position:-@type*@size -@size*56; 
+	}
+	&.cloud{
+		background-position:-@type*@size -@size*57; 
+	}
+	&.cloud-rain{
+		background-position:-@type*@size -@size*58; 
+	}
+	&.cog{
+		background-position:-@type*@size -@size*59; 
+	}
+	&.comp{
+		background-position:-@type*@size -@size*60; 
+	}
+	&.compass{
+		background-position:-@type*@size -@size*61; 
+	}
+	&.cube{
+		background-position:-@type*@size -@size*62; 
+	}
+	&.cur-bp{
+		background-position:-@type*@size -@size*63; 
+	}
+	&.cur-dollar{
+		background-position:-@type*@size -@size*64;
+	}
+	&.cur-euro{
+		background-position:-@type*@size -@size*65; 
+	}
+	&.cur-yen{
+		background-position:-@type*@size -@size*66; 
+	}
+	&.cursor-arrow{
+		background-position:-@type*@size -@size*67; 
+	}
+	&.cursor-drag-arrow{
+		background-position:-@type*@size -@size*68; 
+	}
+	&.cursor-drag-arrow-2{
+		background-position:-@type*@size -@size*69; 
+	}
+	&.cursor-drag-hand{
+		background-position:-@type*@size -@size*70; 
+	}
+	&.cursor-H-split{
+		background-position:-@type*@size -@size*71; 
+	}
+	&.cursor-hand{
+		background-position:-@type*@size -@size*72; 
+	}
+	&.cursor-V-split{
+		background-position:-@type*@size -@size*73; 
+	}
+	&.db{
+		background-position:-@type*@size -@size*74; 
+	}
+	&.delete{
+		background-position:-@type*@size -@size*75; 
+	}
+	&.doc-delete{
+		background-position:-@type*@size -@size*76; 
+	}
+	&.doc-edit{
+		background-position:-@type*@size -@size*77; 
+	}
+	&.doc-empty{
+		background-position:-@type*@size -@size*78; 
+	}
+	&.doc-export{
+		background-position:-@type*@size -@size*79; 
+	}
+	&.doc-import{
+		background-position:-@type*@size -@size*80; 
+	}
+	&.doc-lines{
+		background-position:-@type*@size -@size*81; 
+	}
+	&.doc-lines-stright{
+		background-position:-@type*@size -@size*82; 
+	}
+	&.doc-minus{
+		background-position:-@type*@size -@size*83; 
+	}
+	&.doc-new{
+		background-position:-@type*@size -@size*84; 
+	}
+	&.doc-plus{
+		background-position:-@type*@size -@size*85; 
+	}
+	&.document{
+		background-position:-@type*@size -@size*86; 
+	}
+	&.download{
+		background-position:-@type*@size -@size*87; 
+	}
+	&.emotion-sad{
+		background-position:-@type*@size -@size*88; 
+	}
+	&.emotion-smile{
+		background-position:-@type*@size -@size*89; 
+	}
+	&.expand{
+		background-position:-@type*@size -@size*90; 
+	}
+	&.eye{
+		background-position:-@type*@size -@size*91; 
+	}
+	&.eye-inv{
+		background-position:-@type*@size -@size*92; 
+	}
+	&.facebook{
+		background-position:-@type*@size -@size*93; 
+	}
+	&.filter{
+		background-position:-@type*@size -@size*94; 
+	}
+	&.fire{
+		background-position:-@type*@size -@size*95; 
+	}
+	&.flag{
+		background-position:-@type*@size -@size*96; 
+	}
+	&.folder{
+		background-position:-@type*@size -@size*97; 
+	}
+	&.folder-arrow{
+		background-position:-@type*@size -@size*98; 
+	}
+	&.folder-delete{
+		background-position:-@type*@size -@size*99; 
+	}
+	&.folder-minus{
+		background-position:-@type*@size -@size*100; 
+	}
+	&.folder-open{
+		background-position:-@type*@size -@size*101; 
+	}
+	&.folder-plus{
+		background-position:-@type*@size -@size*102; 
+	}
+	&.font-bold{
+		background-position:-@type*@size -@size*103; 
+	}
+	&.font-italic{
+		background-position:-@type*@size -@size*104; 
+	}
+	&.font-size{
+		background-position:-@type*@size -@size*105; 
+	}
+	&.font-strokethrough{
+		background-position:-@type*@size -@size*106; 
+	}
+	&.font-underline{
+		background-position:-@type*@size -@size*107; 
+	}
+	&.game-pad{
+		background-position:-@type*@size -@size*108; 
+	}
+	&.globe-1{
+		background-position:-@type*@size -@size*109; 
+	}
+	&.globe-2{
+		background-position:-@type*@size -@size*110; 
+	}
+	&.globe-3{
+		background-position:-@type*@size -@size*111; 
+	}
+	&.google{
+		background-position:-@type*@size -@size*112; 
+	}
+	&.hand-1{
+		background-position:-@type*@size -@size*113; 
+	}
+	&.hand-2{
+		background-position:-@type*@size -@size*114; 
+	}
+	&.hand-contra{
+		background-position:-@type*@size -@size*115; 
+	}
+	&.hand-pro{
+		background-position:-@type*@size -@size*116; 
+	}
+	&.headphones{
+		background-position:-@type*@size -@size*117; 
+	}
+	&.heart{
+		background-position:-@type*@size -@size*118; 
+	}
+	&.heart-empty{
+		background-position:-@type*@size -@size*119; 
+	}
+	&.home{
+		background-position:-@type*@size -@size*120; 
+	}
+	&.image-text{
+		background-position:-@type*@size -@size*121; 
+	}
+	&.inbox{
+		background-position:-@type*@size -@size*122; 
+	}
+	&.indent-decrease{
+		background-position:-@type*@size -@size*123; 
+	}
+	&.indent-increase{
+		background-position:-@type*@size -@size*124; 
+	}
+	&.info{
+		background-position:-@type*@size -@size*125; 
+	}
+	&.iphone{
+		background-position:-@type*@size -@size*126; 
+	}
+	&.key{
+		background-position:-@type*@size -@size*127; 
+	}
+	&.layers-1{
+		background-position:-@type*@size -@size*128; 
+	}
+	&.layers-2{
+		background-position:-@type*@size -@size*129; 
+	}
+	&.lightbulb{
+		background-position:-@type*@size -@size*130; 
+	}
+	&.lighting{
+		background-position:-@type*@size -@size*131; 
+	}
+	&.link{
+		background-position:-@type*@size -@size*132; 
+	}
+	&.list-bullets{
+		background-position:-@type*@size -@size*133; 
+	}
+	&.list-num{
+		background-position:-@type*@size -@size*134; 
+	}
+	&.magic-wand{
+		background-position:-@type*@size -@size*135; 
+	}
+	&.mail{
+		background-position:-@type*@size -@size*136; 
+	}
+	&.mail-2{
+		background-position:-@type*@size -@size*137; 
+	}
+	&.mic{
+		background-position:-@type*@size -@size*138; 
+	}
+	&.monitor{
+		background-position:-@type*@size -@size*139; 
+	}
+	&.movie{
+		background-position:-@type*@size -@size*140; 
+	}
+	&.music{
+		background-position:-@type*@size -@size*141; 
+	}
+	&.net-comp{
+		background-position:-@type*@size -@size*142; 
+	}
+	&.network{
+		background-position:-@type*@size -@size*143; 
+	}
+	&.notepad{
+		background-position:-@type*@size -@size*144; 
+	}
+	&.notepad-2{
+		background-position:-@type*@size -@size*145; 
+	}
+	&.on-off{
+		background-position:-@type*@size -@size*146; 
+	}
+	&.openid{
+		background-position:-@type*@size -@size*147; 
+	}
+	&.padlock-closed{
+		background-position:-@type*@size -@size*148; 
+	}
+	&.padlock-open{
+		background-position:-@type*@size -@size*149; 
+	}
+	&.page-layout{
+		background-position:-@type*@size -@size*150; 
+	}
+	&.paragraph{
+		background-position:-@type*@size -@size*151; 
+	}
+	&.pencil{
+		background-position:-@type*@size -@size*152; 
+	}
+	&.phone{
+		background-position:-@type*@size -@size*153; 
+	}
+	&.phone-1{
+		background-position:-@type*@size -@size*154; 
+	}
+	&.phone-2{
+		background-position:-@type*@size -@size*155; 
+	}
+	&.left-arrow{
+		background-position:-@type*@size -@size*156; 
+	}
+	&.photo{
+		background-position:-@type*@size -@size*157; 
+	}
+	&.picture{
+		background-position:-@type*@size -@size*158; 
+	}
+	&.pin{
+		background-position:-@type*@size -@size*159; 
+	}
+	&.pin-2{
+		background-position:-@type*@size -@size*160; 
+	}
+	&.pin-map{
+		background-position:-@type*@size -@size*161; 
+	}
+	&.pin-map-down{
+		background-position:-@type*@size -@size*162; 
+	}
+	&.pin-map-left{
+		background-position:-@type*@size -@size*163; 
+	}
+	&.pin-map-right{
+		background-position:-@type*@size -@size*164; 
+	}
+	&.pin-map-top{
+		background-position:-@type*@size -@size*165; 
+	}
+	&.pin-sq-down{
+		background-position:-@type*@size -@size*166; 
+	}
+	&.pin-sq-left{
+		background-position:-@type*@size -@size*167; 
+	}
+	&.pin-sq-right{
+		background-position:-@type*@size -@size*168; 
+	}
+	&.pin-sq-top{
+		background-position:-@type*@size -@size*169; 
+	}
+	&.playback-ff{
+		background-position:-@type*@size -@size*170; 
+	}
+	&.playback-next{
+		background-position:-@type*@size -@size*171; 
+	}
+	&.playback-pause{
+		background-position:-@type*@size -@size*172; 
+	}
+	&.playback-play{
+		background-position:-@type*@size -@size*173; 
+	}
+	&.playback-prev{
+		background-position:-@type*@size -@size*174; 
+	}
+	&.playback-rec{
+		background-position:-@type*@size -@size*175; 
+	}
+	&.playback-reload{
+		background-position:-@type*@size -@size*176; 
+	}
+	&.playback-rew{
+		background-position:-@type*@size -@size*177; 
+	}
+	&.playback-stop{
+		background-position:-@type*@size -@size*178; 
+	}
+	&.preso{
+		background-position:-@type*@size -@size*179; 
+	}
+	&.print{
+		background-position:-@type*@size -@size*180; 
+	}
+	&.redo{
+		background-position:-@type*@size -@size*181; 
+	}
+	&.rnd-br-down{
+		background-position:-@type*@size -@size*182; 
+	}
+	&.rnd-br-first{
+		background-position:-@type*@size -@size*193; 
+	}
+	&.rnd-br-last{
+		background-position:-@type*@size -@size*184; 
+	}
+	&.rnd-br-next{
+		background-position:-@type*@size -@size*185; 
+	}
+	&.rnd-br-prev{
+		background-position:-@type*@size -@size*186; 
+	}
+	&.rnd-br-up{
+		background-position:-@type*@size -@size*187; 
+	}
+	&.round{
+		background-position:-@type*@size -@size*188; 
+	}
+	&.round-and-up{
+		background-position:-@type*@size -@size*189; 
+	}
+	&.round-arrow-left{
+		background-position:-@type*@size -@size*190; 
+	}
+	&.round-arrow-right{
+		background-position:-@type*@size -@size*191; 
+	}
+	&.round-checkmark{
+		background-position:-@type*@size -@size*192; 
+	}
+	&.round-delete{
+		background-position:-@type*@size -@size*193; 
+	}
+	&.round-minus{
+		background-position:-@type*@size -@size*194; 
+	}
+	&.round-plus{
+		background-position:-@type*@size -@size*195; 
+	}
+	&.rss{
+		background-position:-@type*@size -@size*196; 
+	}
+	&.rss-sq{
+		background-position:-@type*@size -@size*197; 
+	}
+	&.sand{
+		background-position:-@type*@size -@size*198; 
+	}
+	&.sat-dish{
+		background-position:-@type*@size -@size*199; 
+	}
+	&.save{
+		background-position:-@type*@size -@size*200; 
+	}
+	&.server{
+		background-position:-@type*@size -@size*201; 
+	}
+	&.share{
+		background-position:-@type*@size -@size*202; 
+	}
+	&.shop-cart{
+		background-position:-@type*@size -@size*203; 
+	}
+	&.sound-high{
+		background-position:-@type*@size -@size*204; 
+	}
+	&.sound-low{
+		background-position:-@type*@size -@size*205; 
+	}
+	&.sound-mute{
+		background-position:-@type*@size -@size*206; 
+	}
+	&.spechbubble{
+		background-position:-@type*@size -@size*207; 
+	}
+	&.spechbubble-2{
+		background-position:-@type*@size -@size*208; 
+	}
+	&.spechbubble-sq{
+		background-position:-@type*@size -@size*209; 
+	}
+	&.spechbubble-sq-line{
+		background-position:-@type*@size -@size*210; 
+	}
+	&.sq-br-down{
+		background-position:-@type*@size -@size*211; 
+	}
+	&.sq-br-first{
+		background-position:-@type*@size -@size*212; 
+	}
+	&.sq-br-last{
+		background-position:-@type*@size -@size*213; 
+	}
+	&.sq-br-next{
+		background-position:-@type*@size -@size*214; 
+	}
+	&.sq-br-prevshare{
+		background-position:-@type*@size -@size*215; 
+	}
+	&.sq-br-up{
+		background-position:-@type*@size -@size*216; 
+	}
+	&.sq-down{
+		background-position:-@type*@size -@size*217; 
+	}
+	&.sq-minus{
+		background-position:-@type*@size -@size*218; 
+	}
+	&.sq-next{
+		background-position:-@type*@size -@size*219; 
+	}
+	&.sq-plus{
+		background-position:-@type*@size -@size*220; 
+	}
+	&.sq-prev{
+		background-position:-@type*@size -@size*221; 
+	}
+	&.sq-up{
+		background-position:-@type*@size -@size*222; 
+	}
+	&.square-shape{
+		background-position:-@type*@size -@size*223; 
+	}
+	&.star{
+		background-position:-@type*@size -@size*224; 
+	}
+	&.star-fav{
+		background-position:-@type*@size -@size*225; 
+	}
+	&.star-fav-empty{
+		background-position:-@type*@size -@size*226; 
+	}
+	&.sun{
+		background-position:-@type*@size -@size*227; 
+	}
+	&.tag{
+		background-position:-@type*@size -@size*228; 
+	}
+	&.tape{
+		background-position:-@type*@size -@size*229; 
+	}
+	&.target{
+		background-position:-@type*@size -@size*230; 
+	}
+	&.text-curstor{
+		background-position:-@type*@size -@size*231; 
+	}
+	&.text-letter-t{
+		background-position:-@type*@size -@size*232; 
+	}
+	&.top-right-expand{
+		background-position:-@type*@size -@size*233; 
+	}
+	&.trash{
+		background-position:-@type*@size -@size*234; 
+	}
+	&.twitter{
+		background-position:-@type*@size -@size*235; 
+	}
+	&.twitter-2{
+		background-position:-@type*@size -@size*236; 
+	}
+	&.undo{
+		background-position:-@type*@size -@size*237; 
+	}
+	&.user{
+		background-position:-@type*@size -@size*238; 
+	}
+	&.users{
+		background-position:-@type*@size -@size*239; 
+	}
+	&.wrench{
+		background-position:-@type*@size -@size*240; 
+	}
+	&.wrench-plus{
+		background-position:-@type*@size -@size*241; 
+	}
+	&.wrench-plus-2{
+		background-position:-@type*@size -@size*242; 
+	}
+	&.zoom{
+		background-position:-@type*@size -@size*243; 
+	}
+	&.meter{
+		background-position:-@type*@size -@size*244; 
+	}
+	&.buyer{
+		background-position:-@type*@size -@size*245; 
+	}
+	&.seller{
+		background-position:-@type*@size -@size*246; 
+	}
+	&.shield{
+		background-position:-@type*@size -@size*247; 
+	}
+	&.help{
+		background-position:-@type*@size -@size*248; 
+	}
+}
+
+.reverse.icon48{ 
+	.icon(48px,1,'@{img-path}icon48.png');
+}
+
+.icon48{ 
+	.icon(48px,0,'@{img-path}icon48.png');
+}
+
+.reverse.icon32{ 
+	.icon(32px,1,'@{img-path}icon32.png');
+}
+
+.icon32{ 
+	.icon(32px,0,'@{img-path}icon32.png');
+}
+
+.reverse.icon16{
+	.icon(16px,1,'@{img-path}icon16.png');
+}
+.icon16{
+	.icon(16px,0,'@{img-path}icon16.png');
+}

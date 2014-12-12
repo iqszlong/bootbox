@@ -1,0 +1,85 @@
+//星星
+.stars{
+	display: inline-block;
+	width:16px;
+	height:16px;
+	content:"";
+	line-height:16px;
+	background: url('@{img-path}star.gif') repeat-x ;
+	overflow: hidden;
+	vertical-align: text-bottom;
+	.star_selected{
+		display: inline-block;
+		width:16px;
+		height:16px;
+		background: url('@{img-path}star.gif') repeat-x left -32px;
+	}
+	&.sred{
+		.star_selected{background-position: left -16px;}
+	}
+
+	&.a3{width:48px;}
+	&.a5{width:80px;}
+	&.a8{width:128px;}
+	&.a10{width:160px;}
+	&.s0{
+		.star_selected{width:0;}
+	}
+	&.s0d5{
+		.star_selected{width:8px;}
+	}
+	&.s1d5{
+		.star_selected{width:24px;}
+	}
+	&.s2{
+		.star_selected{width:32px;}
+	}
+	&.s2d5{
+		.star_selected{width:40px;}
+	}
+	&.s3{
+		.star_selected{width:48px;}
+	}
+	&.s3d5{
+		.star_selected{width:56px;}
+	}
+	&.s4{
+		.star_selected{width:64px;}
+	}
+	&.s4d5{
+		.star_selected{width:72px;}
+	}
+	&.s5{
+		.star_selected{width:80px;}
+	}
+	&.s5d5{
+		.star_selected{width:88px;}
+	}
+	&.s6{
+		.star_selected{width:96px;}
+	}
+	&.s6d5{
+		.star_selected{width:104px;}
+	}
+	&.s7{
+		.star_selected{width:112px;}
+	}
+	&.s7d5{
+		.star_selected{width:120px;}
+	}
+	&.s8{
+		.star_selected{width:128px;}
+	}
+	&.s8d5{
+		.star_selected{width:136px;}
+	}
+	&.s9{
+		.star_selected{width:144px;}
+	}
+	&.s9d5{
+		.star_selected{width:152px;}
+	}
+	&.sall{
+		.star_selected{width:100%;}
+	}
+}
