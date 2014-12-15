@@ -108,8 +108,8 @@ less工具
 	+	//#gradient .horizontal (@start-color, @end-color) when (@disable-filters)
 	+	//#gradient .vertical (@start-color, @end-color) when (@disable-filters) 
 	+	//#gradient .vertical (@start-color, @end-color) when not (@disable-filters) 
-+	//.clearfix() when not (@using-ieclasses)
-	+	//.clearfix() when (@using-ieclasses) 
++	.clearfix() when not (@using-ieclasses)
+	+	.clearfix() when (@using-ieclasses) 
 +	.inline-block() when (@using-ieclasses) 
 	+	.inline-block() when not (@using-ieclasses)
 +	.ir() 
@@ -127,6 +127,8 @@ less工具
 +	.resizable(@direction: both)
 
 注意：带 '//' 开头的是注释项目，主要是和bootstrap重复了。
+
+注释了bootstrap已有的clearfix()，使用bootbox中的clearfix()增加了ie支持，注意使用时需要添加 `@using-ieclasses` 变量声明（值为'true'和'false'）。
 
 ### .font-size-rems()
 

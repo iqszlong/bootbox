@@ -202,31 +202,31 @@
 
 // Helpers --------------------------------
 //清除浮动
-// .clearfix() when not (@using-ieclasses) {
-// 	&:before,
-// 	&:after {
-// 	    content: "";
-// 	    display: table;
-// 	}
-// 	&:after {
-// 	    clear: both;
-// 	}
-// 	*zoom: 1;
-// }
+.clearfix() when not (@using-ieclasses) {
+	&:before,
+	&:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+	*zoom: 1;
+}
 
-// .clearfix() when (@using-ieclasses) {
-// 	&:before,
-// 	&:after {
-// 	    content: "";
-// 	    display: table;
-// 	}
-// 	&:after {
-// 	    clear: both;
-// 	}
-// 	#ie6 &, #ie7 & {
-// 		zoom: 1;
-// 	}
-// }
+.clearfix() when (@using-ieclasses) {
+	&:before,
+	&:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+	#ie6 &, #ie7 & {
+		zoom: 1;
+	}
+}
 //内敛
 .inline-block() when (@using-ieclasses) {
 	display: inline-block;
