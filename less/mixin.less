@@ -692,3 +692,23 @@ justify-content: flex-end;
 		background: @bg;
 	}
 }
+
+
+
+//微软IE10+栅格布局
+/*----------------------------------------------------------------*\
+ * 1、使用LESS定义一个mixin,名叫.msgrid，定义方法类似定义一个类
+ * 2、 @column定义列
+ * 3、 @row定义行
+ * 4、 @colspan跨越的列
+ * 5、 @rowspan跨越的行
+ \*----------------------------------------------------------------*/	
+.msgrid(){
+	display: -ms-grid;
+}
+.msgrid-site(@column,@row,@colspan,@rowspan) {
+  -ms-grid-column: @column*2;
+  -ms-grid-row: @row*2-1;
+  -ms-grid-column-span: @colspan*2-1;
+  -ms-grid-row-span: @rowspan*2-1;
+}

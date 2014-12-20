@@ -125,6 +125,21 @@ less工具
 +	.background-rgba(@red, @green, @blue, @alpha:1)
 +	.background-size(@background-size: auto)
 +	.resizable(@direction: both)
++	.flexbox()
++	.flex(@flex)
++	.flex-direction(@direction)
++	.order(@order)
++	.justify-content(@justify-method)
++	.align-items(@align-method)
++	.flex-wrap(@wrap-method)
++	.align-self(@value)
++	.user-select()
++	.fixed-width(@value)
++	.fixed-height(@value)
++	.brimming()
++	.selection(@color:#fff,@bg:#39f)
++	.msgrid()
++	.msgrid-site(@column,@row,@colspan,@rowspan)
 
 注意：带 '//' 开头的是注释项目，主要是和bootstrap重复了。
 
@@ -940,6 +955,101 @@ png24位图片背景透明，主要是兼容IE6写的。
 	}
 
 *	`@direction` 默认值both，取值范围 horizontal, vertical, both
+
+### .flexbox()
+
+伸缩容器布局方式：box，css3中新的快速布局方式 包含旧版和新版box布局
+
+注：该布局方式和columns布局方式不能同时使用。
+
+[参考资料（En） <i class="fa fa-external-link-square"></i>](http://bocoup.com/weblog/dive-into-flexbox/)   [参考资料（中文） <i class="fa fa-external-link-square"></i>](http://www.w3cplus.com/css3/flexbox-basics.html)  [less代码来源 <i class="fa fa-external-link-square"></i>](https://github.com/RubyLouvre/myless/blob/master/flexbox.less) [维基百科 <i class="fa fa-external-link-square"></i>](http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans)
+
+### .flex(@flex)
+
+flex用来决定伸缩项目的伸缩性。一个伸缩容器会等比地按照各伸缩项目的扩展比率分配剩余空间，也会按照收缩比率缩小各项目以避免溢出。
+
+* `flex-grow` 此属性值为正数值，用来设置扩展比率，也就是剩余空间是正值的时候此伸缩项目相对于伸缩容器里其他伸缩项目能分配到空间比例。若省略则会被设置为“1”。
+
+* `flex-shrink` 此属性值为正数值，用来设置收缩比率，也就是剩余空间是负值的时候此伸缩项目相对于伸缩容器里其他伸缩项目能收缩的空间比例。若省略则会被设置为“1”，在收缩的时候收缩比率会以伸缩基准值加权。
+
+* `flex-basis` 与width属性使用相同的值，可以用来设置flex-basis长写并指定伸缩基准值，也就是根据可伸缩比率计算 出剩余空间的分布之前，伸缩项目主轴长度的起始数值。若在flex缩写省略了此属性设置，则flex-basis的指定值是“0”，若flex-basis的指定值是“auto”，则伸缩基准值的指定值是元素主轴长度属性的值。
+
+理论上是需要设定3个值的，但实际应用中可以只设1个值，部分浏览器会自动补全后面两个值。
+
+
+### .flex-direction(@direction)
+
+flex-direction属性可以用来设定伸缩容器的主轴的方向，这也决定了用户代理配置伸缩项目的方向。主要适用于伸缩容器，`@direction`主要包括以下几个值：
+
+* `row`flex-direction的默认值，表示伸缩容器的主轴与当前书写模式的行内轴（文字布局的主要主向）。主轴起点与主轴终点方向分别等同于当前书写模式的始与结方向。
+* `row-reverse`表示的是除了主轴起点与主轴终点方向交换以外同row属性值的作用。
+* `column` 表示的是伸缩容器的主轴与当前书写模式的块轴（块布局的主要方向）同向。主轴起点与主轴终点方向分别等同于当前书写模式的前与后方向。简单的可以理解为列布局。
+* `column-reverse` 表示的是除了主轴起点与主轴终点方向交换以外同“column”的属性值作用。
+
+### .order(@order)
+
+order属性是用来设置伸缩项的显示顺序，默认状态下，用户代理会用伸缩项目出现在源文档的次序配置这些伸缩项目。order属性透过将元素分到有序号的组以控制元素出现的顺序。在伸缩布局中，order属性控制伸缩项目在伸缩容器里的顺序。
+`@order`取值越大，越排在后面。并且`@order`可以取负值。
+
+### .justify-content(@justify-method)
+
+justify-content属性主要用来设置伸缩项目沿主轴的对齐方式，从而调整伸缩项目之间的间距。设置了这个属性，在主轴方向上设置的任何margin都不会起作用。`@justify-method` 包括一下几个值：
+
+* `flex-start` 伸缩项目向一行的起始位置靠齐。该行的第一个伸缩项目在主轴起点边的外边距与该行在主轴起点的边对齐，同时所有后续的伸缩项目与其前一个项目对齐。
+* `flex-end` 伸缩项目向一行的结束位置靠齐。该行的最后一个伸缩项目在主轴终点边的外边距与该行在主轴终点的边对齐，同时所有前面的伸缩项目与其后一个项目对齐。
+* `center` 伸缩项目向一行的中间位置靠齐。该行的伸缩项目将相互对齐并在行中居中对齐，同时第一个项目与该行的在主轴起点的边的距离等同与最后一个项目与该行在主轴终点的边的距离（如果剩余空间是负数，则保持两端溢出的长度相等）。
+* `space-between` 伸缩项目会平均地分布在一行里。如果剩余空间是负数，或该行只有一个伸缩项目，则此值等效于「flex-start」。在其它情况下，第一个项目在主轴起点边的外边距会与该行在主轴起点的边对齐，同时最后一个项目在主轴终点边的外边距与该行在主轴终点的边对齐，而剩下的伸缩项目在确保两两之间的空白空间相等下平均分布。
+
+### .align-items(@align-method)
+
+align-items属性，它充许您调整伸缩项目在侧轴的对齐方式，`@align-method` 主要包括以下几个值：
+
+* `flex-start/baseline` 伸缩项目在侧轴起点边的外边距紧靠住该行在侧轴起点的边。
+* `flex-end` 伸缩项目在侧轴终点边的外边距靠住该行在侧轴终点的边。
+* `center` 伸缩项目的外边距盒在该行的侧轴上居中放置。（如果伸缩行的尺寸小于伸缩项目，则伸缩项目会向两个方向溢出相同的量）。
+* `stretch` 伸缩项目拉伸，填满整个侧轴（注意：如果伸缩伸缩的高度有限制，此可能导致伸缩项目的内容溢出该项目。
+伸缩项目在侧轴起点边的外边距会紧靠住该行在侧轴起点的边。）
+
+### .flex-wrap(@wrap-method)
+
+flex-wrap属性主要用来控制伸缩容器是单行还是多行，也决定了侧轴方向一新的一行的堆放方向。主要适用于伸缩容器，`@wrap-method` 主要包括以下几个值：
+
+* `nowrap` flex-wrap的默认值，表示的是伸缩容器为单行。侧轴起点方向等同于当前书写模式的起点或前/头在侧轴的那一边，而侧轴终点方向是侧轴起点的相反方向。
+* `wrap` 表示的是伸缩容器为多行。侧轴起点方向等同于当前书写模式的起眯或前/头在侧轴的那一边，而侧轴终点方向是侧轴起点的相反方向。
+* `wrap-reverse` 除了侧轴起点与侧轴终点方向交换以外同wrap所起作用相同。
+*
+
+### .align-self(@value)
+
+ align-self 用来在单独的伸缩项目上覆写默认的对齐方式。（对于匿名伸缩项目，「align-self」的值永远与其关联的伸缩容器的「align-items」的值相同。）`@value`的值为：`flex-start`、`flex-end`、`center`、`stretch`
+
+### .user-select()
+
+用户是否可选内容，使用后用户无法选择内容。
+
+### .brimming()
+
+充满整个，宽高将设定为100%；
+
+### .selection(@color:#fff,@bg:#39f)
+
+用户选择内容的底色和字体颜色
+
+* `@color` 前景色
+* `@bg` 背景色
+
+### .msgrid()
+
+显示为grid布局与.msgrid-site()配合使用
+
+微软IE10+栅格布局 [参考资料（En） <i class="fa fa-external-link-square"></i>](http://msdn.microsoft.com/en-us/library/ie/hh673533(v=vs.85).aspx) [参考资料（中文） <i class="fa fa-external-link-square"></i>](http://www.w3cplus.com/css3/css3-grid-layout-module.html)
+
+### .msgrid-site(@column,@row,@colspan,@rowspan)
+
+* `@column` 定义列
+* `@row` 定义行
+* `@colspan` 跨越的列
+* `@rowspan` 跨越的行
 
 
 ## resets.less
