@@ -95,6 +95,12 @@
 	-o-filter: @filter;
 	filter: @filter;
 }
+
+.transition(@transition1,@transition2) {
+  -webkit-transition: @transition1,@transition2;
+       -o-transition: @transition1,@transition2;
+          transition: @transition1,@transition2;
+}
 // Transitions
 // .transition(@transition) {
 //   -webkit-transition: @transition;
