@@ -47,6 +47,11 @@ less工具
 +	[lesshat <i class="fa fa-external-link-square"></i>](http://lesshat.madebysource.com/)
 +	[Koala - LESS/Sass/Compass/CoffeeScript编译工具 <i class="fa fa-external-link-square"></i>](http://koala-app.com/index-zh.html)
 
+新增字体图标
+
++	[fontawesome 翻墙可看 ](http://fortawesome.github.io/Font-Awesome/)
++	[ionicons](http://ionicons.com/)
+
 
 ## variable.less
 
