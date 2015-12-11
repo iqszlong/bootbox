@@ -102,6 +102,12 @@
        -o-transition: @transition1,@transition2;
           transition: @transition1,@transition2;
 }
+.transition(@transition1,@transition2,@transition3) {
+  -webkit-transition: @transition1,@transition2,@transition3;
+  	 -moz-transition: @transition1,@transition2,@transition3;
+       -o-transition: @transition1,@transition2,@transition3;
+          transition: @transition1,@transition2,@transition3;
+}
 // Transitions
 // .transition(@transition) {
 //   -webkit-transition: @transition;
@@ -150,6 +156,14 @@
 // 	-moz-opacity:@transparency/100;
 // 	-khtml-opacity: @transparency/100;
 // }
+
+//
+.scale3d(@x,@y,@z){
+	-webkit-transform: scale3d(@x,@y,@z);
+	transform: scale3d(@x,@y,@z);
+}
+
+
 //渐变
 #box-gradient {
 	.horizontal (@start-color, @end-color) when not (@disable-filters) {
@@ -313,6 +327,8 @@
 	-ms-backface-visibility: @see;
 	backface-visibility: @see;
 }
+
+
 
 
 // =============================================
