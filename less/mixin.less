@@ -177,8 +177,8 @@
 		background-image: -o-linear-gradient(left, @start-color, @end-color); /* Opera 11.10 */
 		background-image: -ms-linear-gradient(left, @start-color 0%, @end-color 100%);  /* IE10+ */
 		background-image: linear-gradient(left, @start-color, @end-color); /* the standard */
-		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@start-color,@end-color)); /* IE6 & IE7 */
-		-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@start-color,@end-color); /* IE8+ */
+		//filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@start-color,@end-color)); /* IE6 & IE7 */
+		//-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@start-color,@end-color); /* IE8+ */
 	}
 	.horizontal (@start-color, @end-color) when (@disable-filters) {
 		//background-color: @end-color;
@@ -215,8 +215,8 @@
 		background-image: -o-linear-gradient(@start-color, @end-color); /* Opera 11.10 */
 		background-image: -ms-linear-gradient(top, @start-color 0%, @end-color 100%);  /* IE10+ */
 		background-image: linear-gradient(@start-color, @end-color); /* the standard */
-		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@start-color,@end-color)); /* IE6 & IE7 */
-		-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@start-color,@end-color); /* IE8+ */
+		//filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@start-color,@end-color)); /* IE6 & IE7 */
+		//-ms-filter: %("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@start-color,@end-color); /* IE8+ */
 	}
 }
 
