@@ -1,0 +1,128 @@
+.select-doc {
+  *zoom: 1;
+}
+.select-doc:before,
+.select-doc:after {
+  content: " ";
+  display: table;
+}
+.select-doc:after {
+  clear: both;
+}
+.select-doc:before,
+.select-doc:after {
+  content: " ";
+  display: table;
+}
+.select-doc:after {
+  clear: both;
+}
+.select-doc:before,
+.select-doc:after {
+  content: "";
+  display: table;
+}
+.select-doc:after {
+  clear: both;
+}
+.select-doc:before,
+.select-doc:after {
+  content: "";
+  display: table;
+}
+.select-doc:after {
+  clear: both;
+}
+.select-doc .list {
+  margin: 0 -10px;
+}
+.select-doc .item {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.select-doc .item a {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0 0 100%;
+  overflow: hidden;
+  background-color: #fafafa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #333;
+}
+.select-doc .item a .title {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  font-size: 260%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.select-doc .item a .version {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.select-doc .item a:hover,
+.select-doc .item a:focus {
+  background-color: #6a1b9a;
+  color: #fff;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.select-doc .item a[href*='bootbox'] {
+  color: #268bd5;
+}
+.select-doc .item a[href*='bootbox']:hover,
+.select-doc .item a[href*='bootbox']:focus {
+  background-color: #268bd5;
+  color: #fff;
+}
+.select-doc .item a[href*='bootstrap'] {
+  color: #694f92;
+}
+.select-doc .item a[href*='bootstrap']:hover,
+.select-doc .item a[href*='bootstrap']:focus {
+  background-color: #694f92;
+  color: #fff;
+}
+.select-doc .item a[href*='fontawesome'] {
+  color: #1ea076;
+}
+.select-doc .item a[href*='fontawesome']:hover,
+.select-doc .item a[href*='fontawesome']:focus {
+  background-color: #1ea076;
+  color: #fff;
+}
+.select-doc .item a[href*='ionicons'] {
+  color: #4e8ef7;
+}
+.select-doc .item a[href*='ionicons']:hover,
+.select-doc .item a[href*='ionicons']:focus {
+  background-color: #4e8ef7;
+  color: #fff;
+}
+.select-doc .item a[href*='weather-icons'] {
+  color: #924da3;
+}
+.select-doc .item a[href*='weather-icons']:hover,
+.select-doc .item a[href*='weather-icons']:focus {
+  background-color: #924da3;
+  color: #fff;
+}

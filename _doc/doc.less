@@ -1,0 +1,109 @@
+@import (reference) 'http://localhost:8887/bootstrap-less/variables';
+@import (reference) 'http://localhost:8887/bootstrap-less/mixins';
+@import (reference) "http://localhost:8887/bootstrap-less/buttons";
+@import (reference) "http://localhost:8887/bootstrap-less/utilities";
+
+@import (reference) "http://localhost:8887/less/variable";
+@import (reference) "http://localhost:8887/less/mixin";
+@import (reference) "http://localhost:8887/less/material-colors";
+
+@bootbox-theme:			#268BD5;
+@bootstrap-theme: 		#694F92;
+@fontawesome-theme:		#1EA076;
+@ionicons-theme:		#4E8EF7;
+@weather-icons-theme:	#924DA3;
+
+.select-doc{
+	.clearfix;
+	// overflow: hidden;
+
+	.list{
+		margin:0 -10px; 
+	}
+	.item{
+		float: left;
+		width: 100/4%;
+		padding:0 10px;
+		margin-bottom: 20px;
+		a{
+			position: relative;
+		    display: block;
+		    height: 0;
+		    padding: 0 0 1/1*100%;
+		    overflow: hidden;
+		    background-color: #fafafa;
+		    .border-radius(5px);
+		    
+		    color: #333;
+
+			.title{
+				position: absolute;
+				z-index: 1;
+				top:50%;
+				left:50%;
+				font-size:260%;
+				.translate(-50%,-50%);
+
+			}
+
+			.version{
+				position: absolute;
+				z-index:1;
+				bottom:10px;
+				left:50%;
+				.translate(-50%,0);
+			}
+
+			&:hover,&:focus{
+				background-color:@md-purple-800;
+				color:#fff;
+				.box-shadow(0 10px 20px rgba(0,0,0,0.1));
+			}
+
+			&[href*='bootbox']{
+				color:@bootbox-theme;
+				&:hover,&:focus{
+					background-color:@bootbox-theme;
+					color:#fff;
+				}
+			}
+
+			&[href*='bootstrap']{
+				color:@bootstrap-theme;
+
+				&:hover,&:focus{
+					background-color:@bootstrap-theme;
+					color:#fff;
+				}
+			}
+
+			&[href*='fontawesome']{
+				color:@fontawesome-theme;
+
+				&:hover,&:focus{
+					background-color:@fontawesome-theme;
+					color:#fff;
+				}
+			}
+			&[href*='ionicons']{
+				color:@ionicons-theme;
+
+				&:hover,&:focus{
+					background-color:@ionicons-theme;
+					color:#fff;
+				}
+			}
+			
+			&[href*='weather-icons']{
+				color:@weather-icons-theme;
+
+				&:hover,&:focus{
+					background-color:@weather-icons-theme;
+					color:#fff;
+				}
+			}
+
+		}
+	    
+	}
+}
