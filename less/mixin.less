@@ -733,13 +733,13 @@ justify-content: flex-end;
 
 
 //微软IE10+栅格布局
-/*----------------------------------------------------------------*\
- * 1、使用LESS定义一个mixin,名叫.msgrid，定义方法类似定义一个类
- * 2、 @column定义列
- * 3、 @row定义行
- * 4、 @colspan跨越的列
- * 5、 @rowspan跨越的行
- \*----------------------------------------------------------------*/	
+//*----------------------------------------------------------------*\
+//* 1、使用LESS定义一个mixin,名叫.msgrid，定义方法类似定义一个类
+// * 2、 @column定义列
+// * 3、 @row定义行
+// * 4、 @colspan跨越的列
+// * 5、 @rowspan跨越的行
+// \*----------------------------------------------------------------*/	
 .msgrid(){
 	display: -ms-grid;
 }
@@ -748,4 +748,20 @@ justify-content: flex-end;
   -ms-grid-row: @row*2-1;
   -ms-grid-column-span: @colspan*2-1;
   -ms-grid-row-span: @rowspan*2-1;
+}
+
+//修改原有控件样式
+.appearance (@name:none,@type){
+	appearance:@name;
+	-moz-appearance:@name;
+	-webkit-appearance:@name;
+}
+.appearance (@name:none,@type) when (@type = select){
+	appearance:@name;
+	-moz-appearance:@name;
+	-webkit-appearance:@name;
+
+	&::-ms-expand{
+      display:@name;
+    }
 }
